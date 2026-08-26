@@ -344,7 +344,7 @@
 
             align-items: center;
 
-            gap: 34px;
+            gap: 28px;
 
             list-style: none;
 
@@ -1080,6 +1080,176 @@
 
 
         /* =====================================================
+           TESTIMONIALS
+        ===================================================== */
+
+        .testimonials {
+
+            background:
+                var(--cream);
+
+        }
+
+        .testimonials-heading {
+
+            text-align: center;
+
+            max-width: 700px;
+
+            margin:
+                0 auto 60px;
+
+        }
+
+        .testimonials-heading
+        .section-description {
+
+            margin-left: auto;
+            margin-right: auto;
+
+        }
+
+        .testimonials-grid {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(3, 1fr);
+
+            gap: 25px;
+
+        }
+
+        .testimonial-card {
+
+            background:
+                var(--white);
+
+            padding:
+                38px 32px;
+
+            border:
+                1px solid
+                var(--border);
+
+            transition:
+                transform 0.3s ease,
+                box-shadow 0.3s ease;
+
+        }
+
+        .testimonial-card:hover {
+
+            transform:
+                translateY(-6px);
+
+            box-shadow:
+                0 18px 40px
+                rgba(0, 0, 0, 0.08);
+
+        }
+
+        .testimonial-stars {
+
+            color:
+                var(--gold);
+
+            font-size: 15px;
+
+            letter-spacing: 3px;
+
+            margin-bottom: 22px;
+
+        }
+
+        .testimonial-text {
+
+            font-family:
+                Georgia,
+                "Times New Roman",
+                serif;
+
+            font-size: 20px;
+
+            line-height: 1.5;
+
+            color:
+                var(--text);
+
+            margin-bottom: 28px;
+
+        }
+
+        .testimonial-author {
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 14px;
+
+            padding-top: 18px;
+
+            border-top:
+                1px solid
+                var(--border);
+
+        }
+
+        .testimonial-avatar {
+
+            width: 44px;
+            height: 44px;
+
+            min-width: 44px;
+
+            border-radius: 50%;
+
+            background:
+                var(--pink);
+
+            display: flex;
+
+            align-items: center;
+            justify-content: center;
+
+            color:
+                var(--white);
+
+            font-family:
+                Georgia,
+                serif;
+
+            font-size: 18px;
+
+        }
+
+        .testimonial-author strong {
+
+            display: block;
+
+            font-size: 13px;
+
+            margin-bottom: 2px;
+
+        }
+
+        .testimonial-author span {
+
+            color:
+                var(--muted);
+
+            font-size: 11px;
+
+            text-transform:
+                uppercase;
+
+            letter-spacing: 1px;
+
+        }
+
+
+        /* =====================================================
            CONTACT
         ===================================================== */
 
@@ -1508,7 +1678,7 @@
 
             .nav-links {
 
-                gap: 18px;
+                gap: 16px;
 
             }
 
@@ -1530,6 +1700,28 @@
                     1fr 1fr;
 
                 gap: 50px;
+
+            }
+
+            .testimonials-grid {
+
+                grid-template-columns:
+                    repeat(3, 1fr);
+
+                gap: 15px;
+
+            }
+
+            .testimonial-card {
+
+                padding:
+                    30px 24px;
+
+            }
+
+            .testimonial-text {
+
+                font-size: 18px;
 
             }
 
@@ -1568,7 +1760,8 @@
 
             .nav {
 
-                height: 70px;
+                height:
+                    70px;
 
             }
 
@@ -1803,6 +1996,38 @@
             }
 
 
+            /* TESTIMONIALS */
+
+            .testimonials-heading {
+
+                margin-bottom:
+                    40px;
+
+            }
+
+            .testimonials-grid {
+
+                grid-template-columns:
+                    1fr;
+
+                gap: 18px;
+
+            }
+
+            .testimonial-card {
+
+                padding:
+                    30px 25px;
+
+            }
+
+            .testimonial-text {
+
+                font-size: 18px;
+
+            }
+
+
             /* CONTACT */
 
             .contact-grid {
@@ -1945,10 +2170,10 @@
                 href="#home"
                 class="logo"
             >
-                XYZ
+                NAILS
 
                 <span>
-                    NAILS ART
+                    BY RUPAL
                 </span>
             </a>
 
@@ -1978,6 +2203,12 @@
                     <li>
                         <a href="#about">
                             About
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#testimonials">
+                            Testimonials
                         </a>
                     </li>
 
@@ -2034,6 +2265,10 @@
 
             <a href="#about">
                 About
+            </a>
+
+            <a href="#testimonials">
+                Testimonials
             </a>
 
             <a href="#contact">
@@ -2391,7 +2626,7 @@
                     <div class="about-image reveal">
 
                         <img
-                            src="https://images.unsplash.com/photo-1610992015732-2449b76344bc?auto=format&fit=crop&w=1200&q=85"
+                            src="https://raw.githubusercontent.com/quintuspai/Test/main/Founder.jpeg"
                             alt="Nail artist creating a design"
                             loading="lazy"
                         >
@@ -2484,6 +2719,176 @@
 
 
         <!-- =================================================
+             TESTIMONIALS
+        ================================================== -->
+
+        <section
+            class="section testimonials"
+            id="testimonials"
+        >
+
+            <div class="container">
+
+                <div class="testimonials-heading reveal">
+
+                    <div class="section-label">
+                        Client Love
+                    </div>
+
+                    <h2 class="section-title">
+                        What Our Clients Say
+                    </h2>
+
+                    <p class="section-description">
+
+                        Beautiful experiences, happy clients
+                        and a little love for the work we do.
+
+                    </p>
+
+                </div>
+
+
+                <div class="testimonials-grid">
+
+
+                    <!-- TESTIMONIAL 1 -->
+
+                    <article
+                        class="testimonial-card reveal"
+                    >
+
+                        <div class="testimonial-stars">
+                            ★★★★★
+                        </div>
+
+                        <p class="testimonial-text">
+
+                            “Absolutely loved my nails!
+                            The attention to detail was
+                            incredible and the final result
+                            was even better than I imagined.”
+
+                        </p>
+
+                        <div class="testimonial-author">
+
+                            <div class="testimonial-avatar">
+                                H
+                            </div>
+
+                            <div>
+
+                                <strong>
+                                    Himansi
+                                </strong>
+
+                                <span>
+                                    Happy Client
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- TESTIMONIAL 2 -->
+
+                    <article
+                        class="testimonial-card reveal"
+                    >
+
+                        <div class="testimonial-stars">
+                            ★★★★★
+                        </div>
+
+                        <p class="testimonial-text">
+
+                            “Such a lovely experience from
+                            start to finish. Rupal understood
+                            exactly what I wanted and created
+                            the most beautiful design.”
+
+                        </p>
+
+                        <div class="testimonial-author">
+
+                            <div class="testimonial-avatar">
+                                S
+                            </div>
+
+                            <div>
+
+                                <strong>
+                                    Sunita
+                                </strong>
+
+                                <span>
+                                    Happy Client
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- TESTIMONIAL 3 -->
+
+                    <article
+                        class="testimonial-card reveal"
+                    >
+
+                        <div class="testimonial-stars">
+                            ★★★★★
+                        </div>
+
+                        <p class="testimonial-text">
+
+                            “The quality, creativity and
+                            personal attention were amazing.
+                            My nails looked gorgeous and
+                            lasted beautifully.”
+
+                        </p>
+
+                        <div class="testimonial-author">
+
+                            <div class="testimonial-avatar">
+                                R
+                            </div>
+
+                            <div>
+
+                                <strong>
+                                    Riddhi
+                                </strong>
+
+                                <span>
+                                    Happy Client
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
              CONTACT
         ================================================== -->
 
@@ -2529,8 +2934,9 @@
                                 </small>
 
                                 <p>
-                                    123 Artisanal Way,
-                                    Studio District
+                                    J.S. Rd,
+                                    Near Rustomjee International School,
+                                    Dahisar West, Mumbai 400068
                                 </p>
 
                             </div>
@@ -2543,9 +2949,9 @@
                                 </small>
 
                                 <a
-                                    href="mailto:hello@xyznailsart.com"
+                                    href="mailto:rupalpatel2979@gmail.com"
                                 >
-                                    hello@xyznailsart.com
+                                    rupalpatel2979@gmail.com
                                 </a>
 
                             </div>
@@ -2558,9 +2964,9 @@
                                 </small>
 
                                 <a
-                                    href="tel:+14155550198"
+                                    href="tel:+919987484325"
                                 >
-                                    +1 (415) 555-0198
+                                    +91 99874 84325
                                 </a>
 
                             </div>
@@ -2573,8 +2979,8 @@
                                 </small>
 
                                 <p>
-                                    Mon – Sat ·
-                                    9:00 AM – 7:00 PM
+                                    All Days ·
+                                    11:00 AM – 7:00 PM
                                 </p>
 
                             </div>
@@ -2644,7 +3050,7 @@
                 <div>
 
                     <div class="footer-logo">
-                        XYZ Nails Art
+                        NAILS By Rupal
                     </div>
 
                     <p class="footer-about">
@@ -2678,6 +3084,10 @@
 
                     <a href="#about">
                         About
+                    </a>
+
+                    <a href="#testimonials">
+                        Testimonials
                     </a>
 
                 </div>
@@ -2715,13 +3125,13 @@
                     </h4>
 
                     <a
-                        href="mailto:hello@xyznailsart.com"
+                        href="mailto:rupalpatel2979@gmail.com"
                     >
                         Email Us
                     </a>
 
                     <a
-                        href="tel:+14155550198"
+                        href="tel:+919987484325"
                     >
                         Call Us
                     </a>
@@ -2738,7 +3148,7 @@
             <div class="footer-bottom">
 
                 <span>
-                    © 2026 XYZ Nails Art.
+                    © 2026 NAILS By Rupal.
                     All rights reserved.
                 </span>
 
@@ -3104,5 +3514,4 @@
 </body>
 
 </html>
-
 
